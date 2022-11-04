@@ -80,7 +80,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: #212121;
 }
 /****************************************************
 _header website *************************************
@@ -89,7 +89,7 @@ _header website *************************************
   padding: 3.2rem 9.6rem;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.055);
+  background-color: #b2ebf2;
 }
 .main-nav-list {
   display: flex;
@@ -99,16 +99,40 @@ _header website *************************************
 .main-nav-link:visited {
   font-size: 2.4rem;
   font-weight: 500;
+  color: #212121;
 }
 
 /****************************************************
 _section Hero ***************************************
 *****************************************************/
 .section-hero {
-  background-image: url("img/tienPham.jpg");
-  background-position: center;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.533));
+  filter: grayscale(100%); */
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  /* background-color: blue; */
-  height: 100vh;
+  background-size: cover; */
+  /* height: 100vh; */
+  background-color: #b2ebf2;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+}
+.hero-img-box {
+  padding: 9.6rem;
+}
+.hero-img-box img {
+  width: 100%;
+  border-radius: 100%;
+  border: 3px solid black;
+}
+
+.grid {
+  display: grid;
+}
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
 }
